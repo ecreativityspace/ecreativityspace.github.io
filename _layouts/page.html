@@ -15,8 +15,8 @@ body_class: "page-template"
     <div id="slider_wraper" class="flex-column">
     <ul id="slider" class="flex-row">
       <p>kkgkkggkgk</p>
-      {% for post in paginator.posts %}
-      <a href="{{ root_url }}{{ post.url }}" class="img-wrap">
+      {% for post in posts %}
+      <a href="{{ post.url | prepend: site.url }}" class="img-wrap">
         <div class="description description--grid">
           <h3>Mother's Love</h3>
           <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>

@@ -1,0 +1,76 @@
+#main{
+
+      background: url("img/one.jpg") center bottom;
+      background-size:300%;
+      width:100%;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:16px;
+
+  h1{
+    font-family:$Raleway;
+    font-size: 5em;
+    font-family: $CodePro;
+    background: url("img/one.jpg") bottom center;
+    background-size: 350%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 0.8;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  #triangle{
+      margin:2rem auto 0 auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 38px 25px 0 25px;
+      border-color: #ababab transparent transparent transparent;
+      transition: all ease-in-out 2s;
+      //display:none;
+    }
+
+}
+#menu{
+  display:flex;
+  justify-content:space-around;
+
+  a, li{
+    display:inline-block;
+  }
+  a{
+    margin:1rem;
+  }
+  p{
+    visibility:hidden;
+  }
+  .visible{
+    //display:block;
+    visibility:visible;
+    transition: visibility 400ms ease-in-out;
+  }
+}
+
+@media (min-width:500px){
+  #main{
+    background: url("img/one.jpg") center bottom;
+    background-size:200% auto;
+  }
+}
+
+@media (min-width:700px){
+  #main{
+    background: url("img/one.jpg") center bottom;
+    background-size:150% auto;
+  }
+}
+
+@media (min-width:1000px){
+  #main{
+    background: url("img/one.jpg") center bottom;
+    background-size:100% auto;
+  }
+}

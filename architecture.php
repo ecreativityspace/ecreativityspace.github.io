@@ -1,6 +1,15 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Zofia Rusinowska">
+    <meta name="description" content=" ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ecreativity</title>
+</head>
+<body>
 
   <div id="load_screen">
     <div id="spinner">
@@ -113,3 +122,5 @@ layout: default
     });
 
   </script>
+</body>
+</html>

@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-		<meta charset="UTF-8">
-		<meta name="author" content="Zofia Rusinowska">
-    <meta name="description" content=" ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Ecreativity</title>
-</head>
-<body>
-  <div id="load_screen">
-    <div id="spinner">
-
-      <div class="double-bounce1"></div>
-      <div class="double-bounce2"></div>
-    </div>
-  </div>
+---
+layout: default
+---
 
   <div id="main">
       <div id="intro">
       <header class="">
-        <h1>Ecreativity</h1>
-        <a href="architecture.php">
+        <h1>{{ site.name }}</h1>
+        <a href="spaces.html">
 
           <div id="triangle"></div>
 
@@ -50,6 +34,3 @@
       });
     });
   </script>
-
-</body>
-</html>

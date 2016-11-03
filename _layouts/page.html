@@ -3,51 +3,33 @@ layout: default
 body_class: page_template
 ---
 
-<article role="main" class="{% if page.image %}image{% endif %}">
-  <header>
-    <a href="{{ site.baseurl }}/" id="home_link">«</a>
-    <h1>{{ page.title }}</h1>
-  </header>
-  <div class="text">
-    {{ content }}
-  </div>
-  {% include footer.html %}
-</article>
+{% include loading.html %}
 
-<div id="load_screen">
-  <div id="spinner">
-
-    <div class="double-bounce1"></div>
-    <div class="double-bounce2"></div>
-  </div>
-</div>
 <div id="panel_bg">
   <div id="panel" class="flex-column">
     <header>
       <h2>{{ page.title }}</h2>
     </header>
+    <div class="text">
+      {{ content }}
+    </div>
     <div id="slider_wraper" class="flex-column">
     <ul id="slider" class="flex-row">
 
-      <?php
-      $files = glob("works/architecture/*.jpg");
-        foreach($files as $jpg){
-        ?>
-      <a href="#" class="img-wrap">
+      {% for post in paginator.posts %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="img-wrap">
         <div class="description description--grid">
           <h3>Mother's Love</h3>
           <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>
         </div>
         <li class="item">
-
-
-          <img src="<?php echo $jpg; ?>" alt="" class="thumb">
-
+            {% if post.image %}
+          <img src="{{ post.image }}" alt="" class="thumb">
+            {% endif %}
         </li>
       </a>
-      <?php
-      }
-      ?>
+
+    {% endfor %}
 
     </ul>
   </div>
@@ -126,3 +108,5 @@ body_class: page_template
   });
 
 </script>
+{% include pagination.html %}
+{% include footer.html %}

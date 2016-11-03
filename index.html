@@ -1,61 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-		<meta charset="UTF-8">
-		<meta name="author" content="Zofia Rusinowska">
-    <meta name="description" content=" ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+---
+layout: default
+body_class: "home-template user"
+---
 
-    <title>Ecreativity</title>
-</head>
-<body>
-  <div id="load_screen">
-    <div id="spinner">
 
-      <div class="double-bounce1"></div>
-      <div class="double-bounce2"></div>
+<div class="page-content">
+  <div class="wrapper">
+    <div class="home">
+      {% for post in paginator.posts %}
+      <article class="{%comment%}post_class{%endcomment%}">
+        {% if post.image %}
+        <div class="image-holder show">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="inner" style="background-image: url('{{ post.image }}');">
+            <img src="{{ post.image }}">
+          </a>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
-
-  <div id="main">
-      <div id="intro">
-      <header class="">
-        <h1>Ecreativity</h1>
-        <a href="architecture.html">
-
-          <div id="triangle"></div>
-
-        </a>
-      </header>
-
-      <ul id="menu">
-        <li  id="about">
-        <a href="#" id="about_tigger" class="tigger">ABOUT</a>
-        <p id="about_text"> hohlal </p>
-        </li>
-        <li  id="contact">
-        <a href="#" id="contact_tigger" class="tigger">CONTACT</a>
-          <p id="contact_tigger"> mumba </p>
-        </li>
-      </ul>
-      </div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="<?php bloginfo('template_directory');?>/lightslider.js"></script>
-  <script>
-      window.addEventListener("load", function() {
-        $('#load_screen').attr("style", "display:none");
-      });
-  </script>
-  <script>
-    $(document).ready(function(){
-      $(".tigger").on('click', function(){
-        $(this).siblings("p").toggleClass('visible');
-      });
-    });
-  </script>
-
-</body>
-</html>
+</div>
+{% include pagination.html %}
+{% include footer.html %}

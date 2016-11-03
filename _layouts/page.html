@@ -15,7 +15,7 @@ body_class: "page-template"
     <div id="slider_wraper" class="flex-column">
     <ul id="slider" class="flex-row">
       <p>kkgkkggkgk</p>
-      {% for post in posts %}
+      {% for post in site.pagination.posts %}
       <a href="{{ post.url | prepend: site.url }}" class="img-wrap">
         <div class="description description--grid">
           <h3>Mother's Love</h3>

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: "architecture"
+title: architecture
+permalink: /architecture/
+sitemap: false
 image: false
 video: false
 ---

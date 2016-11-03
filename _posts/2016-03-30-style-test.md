@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Art Pavillion"
-image: http://i.imgur.com/q0TrvWG.jpg
+image: works/architecture/01.jpg
 video: false
 ---
 

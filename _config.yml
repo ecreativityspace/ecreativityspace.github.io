@@ -6,9 +6,8 @@ description: >
   being acquired by <a href='https://ghost.org'>Ghost</a>, the Roon theme was
   open sourced.<br> This is my Jekyll port of the Roon theme.
 url: "https://ecreativityspace.github.io"
-twitter_username: jekyllrb
-github_username:  jekyll
-
+twitter_username: ecreativityspace
+github_username:  ecreativityspace
 permalink: pretty
 paginate: 5
 

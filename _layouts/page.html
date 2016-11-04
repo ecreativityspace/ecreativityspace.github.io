@@ -24,7 +24,7 @@ body_class: "page-template"
         </div>
         <li class="item">
             {% if post.image %}
-          <img src="{{ site.url }}{{ post.image }}" alt="" class="thumb">
+          <img src="{{ post.image | prepend: site.baseurl }}" alt="" class="thumb">
             {% endif %}
         </li>
       </a>

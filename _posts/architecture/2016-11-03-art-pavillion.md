@@ -2,7 +2,7 @@
 layout: post
 title: "Art Pavillion"
 category: architecture
-image: works/architecture/01.jpg
+image: works/architecture/art-pavillion/LOGO.jpg
 video: false
 ---
 

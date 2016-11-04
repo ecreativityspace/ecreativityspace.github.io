@@ -11,22 +11,20 @@ body_class: "home-template user"
       <h2>{{ page.title }}</h2>
     </header>
     <div class="text">
-      {{ content }}
     </div>
     <div id="slider_wraper" class="flex-column">
     <ul id="slider" class="flex-row">
       <p>kkgkkggkgk</p>
 
-    {% for post in page.posts %}
+    {% for post in site.categories.architecture %}
       <a href="{{ post.url | prepend: site.url }}" class="img-wrap">
         <div class="description description--grid">
           <h3>Mother's Love</h3>
           <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>
         </div>
         <li class="item">
-            {% if post.image %}
           <img src="{{ post.image }}" alt="" class="thumb">
-            {% endif %}
+
         </li>
       </a>
 

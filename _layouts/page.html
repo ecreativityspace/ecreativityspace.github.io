@@ -16,7 +16,7 @@ body_class: "page-template"
     <ul id="slider" class="flex-row">
 
       {% for post in site.categories.architecture %}
-        <a href="#" class="img-wrap">
+        <a href="{{ site.url }}{{ post.url }}" class="img-wrap">
           <div class="description description--grid">
             <a href="{{ site.url }}{{ post.url }}" class=""><h3>Mother's Love</h3></a>
             <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>

@@ -16,7 +16,7 @@ body_class: "page-template"
     <ul id="slider" class="flex-row">
       <p>kkgkkggkgk</p>
 
-      {% for post in site.posts %}
+      {% for post in site.categories.architecture %}
         <a href="{{ site.url }}{{ post.url }}" class="img-wrap">
           <div class="description description--grid">
             <h3>Mother's Love</h3>
@@ -27,7 +27,6 @@ body_class: "page-template"
 
           </li>
         </a>
-
       {% endfor %}
     </ul>
   </div>

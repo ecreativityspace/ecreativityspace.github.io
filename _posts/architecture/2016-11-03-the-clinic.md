@@ -2,7 +2,7 @@
 layout: post
 title: "The Clinic"
 category: architecture
-image: works/architecture/the-clinic/2.jpg
+image: works/architecture/02.jpg
 video: false
 ---
 

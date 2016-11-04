@@ -17,13 +17,13 @@ body_class: "page-template"
       <p>kkgkkggkgk</p>
 
       {% for post in site.posts %}
-        <a href="{{ post.url | prepend: site.url }}" class="img-wrap">
+        <a href="{{ site.url }}{{ post.url }}" class="img-wrap">
           <div class="description description--grid">
             <h3>Mother's Love</h3>
             <p>Every time you drink a glass of milk or eat a piece of cheese, you harm a mother. Please go vegan. <em>&mdash; Gary L. Francione</em></p>
           </div>
           <li class="item">
-            <img src="{{ post.image }}" alt="" class="thumb">
+            <img src="{{ site.url }}{{ post.image }}" alt="" class="thumb">
 
           </li>
         </a>
